@@ -1,9 +1,11 @@
 <html>
   <head>
     <title><%- @document.title %> My Website</title>
+
   </head>
   <body>
     <h1><%= @document.title %></h1>
     <%- @content %>
+    <%- @getBlock("scripts").toHTML() %>
   </body>
 </html>
