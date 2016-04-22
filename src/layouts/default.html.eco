@@ -1,9 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
     <title><%- @document.title %> My Website</title>
 
   </head>
   <body>
+    <img alt="" src="/images/logo.gif" />
     <h1><%= @document.title %></h1>
     <%- @content %>
     <%- @getBlock("scripts").toHTML() %>
