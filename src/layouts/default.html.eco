@@ -3,6 +3,7 @@
   <head>
     <title><%- @document.title %> My Website</title>
     <%- @getBlock("styles").add(["/styles/style.css"]).toHTML() %>
+    <%- @getBlock("scripts").add(["/vendor/jquery.js", "/scripts/script.js"]).toHTML() %>
   </head>
   <body>
     <img alt="" src="/images/logo.gif" />
